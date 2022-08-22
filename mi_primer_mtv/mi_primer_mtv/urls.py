@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mi_primer_mtv.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('familiar1/', mostrarPrimerFamiliar)
 ]
