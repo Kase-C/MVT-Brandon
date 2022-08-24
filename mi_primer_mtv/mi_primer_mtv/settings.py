@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mi_primer_mtv.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/fuchi/OneDrive/Documentos/codigos_python/Django/mi_primer_mvt/mi_primer_mtv/templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
