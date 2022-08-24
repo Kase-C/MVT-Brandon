@@ -1,7 +1,7 @@
-from lzma import _FilterChain
+from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Context, Template, loader
-from models import Familiar
+from .models import Familiar
 
 def mostrarPrimerFamiliar(request):
     primer_familiar = Familiar(nombre = "Alejandra", edad = 40, fecha_de_nacimiento = 24/3/1982)
@@ -15,5 +15,3 @@ def mostrarPrimerFamiliar(request):
     documento = plantilla.render(diccionario)
 
     return HttpResponse(documento)
-
-
