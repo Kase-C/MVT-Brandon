@@ -7,10 +7,12 @@
     <title>Mi primer MVT</title>
 </head>
 <body>
-    <h1>Primer Familiar</h1>
+    <h1>Familiares</h1>
 
-    <h2>Su nombre es {{ Nombre }}</h2>
-    <h2>Tiene {{ Edad }} años</h2>
-    <h2>Nacio el {{ Fecha_de_nacimiento }}</h2>
+    {% for familiar in Familiares %}
+
+    <h2>{{ familiar }}</h2>
+    
+    {% endfor %}
 </body>
 </html>
